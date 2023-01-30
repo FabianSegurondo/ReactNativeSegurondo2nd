@@ -1,0 +1,1 @@
+# ReactNativeSegurondo2nParcial
