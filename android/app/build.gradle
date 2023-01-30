@@ -58,6 +58,19 @@ react {
  * use App Bundles (https://developer.android.com/guide/app-bundle/)
  * and want to have separate APKs to upload to the Play Store.
  */
+project.ext.react = [
+    enableHermes: true,  // clean and rebuild if changing
+]
+
+apply from: "../../node_modules/react-native/react.gradle"
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+
+project.ext.vectoricons = [
+    iconFontNames: [ 'Ionicons.ttf' ] // Name of the font files you want to copy
+]
+
+
+
 def enableSeparateBuildPerCPUArchitecture = false
 
 /**
